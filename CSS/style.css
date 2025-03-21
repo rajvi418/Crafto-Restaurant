@@ -78,3 +78,18 @@ header section .logo img
 {
     color: var(--white);
 }
+
+/* Banner Section  */
+
+.banner-section
+{
+    display: flex;
+    justify-content: center;
+}
+.banner-bg
+{
+    height: 700px;
+    width: 700px;
+    border-radius: 500px;
+    background-color: var(--okar-color);
+}
