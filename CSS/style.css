@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+}
+
+:root
+{
+    --okar-color:#D39121;
+    --medium-grey:#8D8987;
+    --black:#282725;
+    --dark-grey:#383632;
+    --red:#D51F0F;
+    --white:#FFFFFF;
+    --green:#46B57E;
+    --very-light-grey:#F9F6F3;
+    --yellow:#ECBA23;
+    --bebas-neue:'Bebas Neue', cursive;
+    --schibsted-grotesk:'Schibsted Grotesk', sans-serif;
+}
+
+
+header
+{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-image: url('../Images/restaurant-home-banner-bg.jpg');
+}
+a
+{
+    text-decoration: none;
+}
+.mg-right-5
+{
+    margin-right: 5px;
+}
+/* Header Section  */
+header .container
+{
+    padding: 15px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header section .logo img
+{
+    width:159px;
+}
+.navigation 
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: var(--white);
+    font-family: var(--bebas-neue);
+    font-size: 20px;
+}
+.navigation a
+{
+    color: var(--white);
+}
+.booking-table
+{
+    border: 1px solid var(--medium-grey);
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+.booking-table a
+{
+    color: var(--white);
+}

@@ -1,8 +1,8 @@
 /* Bebas Neue Fonts */
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('BebasNeue-Regular.woff2') format('woff2'),
-        url('BebasNeue-Regular.woff') format('woff');
+    src: url('../Fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('../Fonts/BebasNeue-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-Italic.woff2') format('woff2'),
-        url('SchibstedGrotesk-Italic.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-Italic.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -21,8 +21,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-Regular.woff2') format('woff2'),
-        url('SchibstedGrotesk-Regular.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-Regular.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -30,8 +30,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-Black.woff2') format('woff2'),
-        url('SchibstedGrotesk-Black.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-Black.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -39,8 +39,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-ExtraBold.woff2') format('woff2'),
-        url('SchibstedGrotesk-ExtraBold.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-ExtraBold.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -48,8 +48,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-ExtraBoldItalic.woff2') format('woff2'),
-        url('SchibstedGrotesk-ExtraBoldItalic.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-ExtraBoldItalic.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-ExtraBoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -57,8 +57,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-Bold.woff2') format('woff2'),
-        url('SchibstedGrotesk-Bold.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-Bold.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -66,8 +66,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-BlackItalic.woff2') format('woff2'),
-        url('SchibstedGrotesk-BlackItalic.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-BlackItalic.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -75,8 +75,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-BoldItalic.woff2') format('woff2'),
-        url('SchibstedGrotesk-BoldItalic.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-BoldItalic.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -84,8 +84,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-Medium.woff2') format('woff2'),
-        url('SchibstedGrotesk-Medium.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-Medium.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -93,8 +93,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-SemiBold.woff2') format('woff2'),
-        url('SchibstedGrotesk-SemiBold.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-SemiBold.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -102,8 +102,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-MediumItalic.woff2') format('woff2'),
-        url('SchibstedGrotesk-MediumItalic.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-MediumItalic.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -111,8 +111,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-SemiBoldItalic.woff2') format('woff2'),
-        url('SchibstedGrotesk-SemiBoldItalic.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-SemiBoldItalic.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-SemiBoldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
@@ -120,8 +120,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-Italic.woff2') format('woff2'),
-        url('SchibstedGrotesk-Italic.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-Italic.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -129,8 +129,8 @@
 
 @font-face {
     font-family: 'Schibsted Grotesk';
-    src: url('SchibstedGrotesk-Regular.woff2') format('woff2'),
-        url('SchibstedGrotesk-Regular.woff') format('woff');
+    src: url('../Fonts/SchibstedGrotesk-Regular.woff2') format('woff2'),
+        url('../Fonts/SchibstedGrotesk-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
