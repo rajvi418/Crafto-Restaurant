@@ -102,14 +102,13 @@ header section .logo img
 {
     padding: 15px;
 }
-.banner-section .sub-heading
+.banner-section .sub-heading p
 {
     font-family: var(--bebas-neue);
     font-size: 26px;
     color: #000000;
     text-align: center;
-    margin-bottom: 25px;
-
+    margin: 0;
 }
 
 .banner-section .Great-dining h1
@@ -119,6 +118,7 @@ header section .logo img
     color: transparent;
     text-align: center;
     font-size: 110px;
-    -webkit-text-stroke-width:0.4px;
-    -webkit-text-stroke-color: var(--white);
+    font-weight: 100;
+    -webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color: var(--white); 
 }
