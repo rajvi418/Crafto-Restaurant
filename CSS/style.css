@@ -33,6 +33,10 @@ header
     background-repeat: no-repeat;
     background-color: black;
     background-image: url('../Images/restaurant-home-banner-bg.jpg');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
 }
 a
 {
@@ -45,10 +49,13 @@ a
 /* Header Section  */
 header .container
 {
+    width: 100%;
     padding: 15px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 header section .logo img
 {
@@ -80,16 +87,38 @@ header section .logo img
 }
 
 /* Banner Section  */
-
-.banner-section
-{
-    display: flex;
-    justify-content: center;
-}
 .banner-bg
 {
     height: 700px;
     width: 700px;
     border-radius: 500px;
+    background-image: url('../Images/restaurant-home-banner-pattern.webp');
     background-color: var(--okar-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-section
+{
+    padding: 15px;
+}
+.banner-section .sub-heading
+{
+    font-family: var(--bebas-neue);
+    font-size: 26px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+.banner-section .Great-dining h1
+{
+    font-family: var(--bebas-neue);
+    font-size: 60px;
+    color: transparent;
+    text-align: center;
+    font-size: 110px;
+    -webkit-text-stroke-width:0.4px;
+    -webkit-text-stroke-color: var(--white);
 }
