@@ -101,10 +101,6 @@ header section .logo img
 .banner-section
 {
     padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 .banner-section .sub-heading p
 {
@@ -128,7 +124,7 @@ header section .logo img
     margin-bottom: 0px;
 }
 
-.banner-section .animated-heading
+.banner-section .animated-heading h1
 {
     font-size: 110px;
     line-height: 80px;
@@ -137,7 +133,12 @@ header section .logo img
     text-align: center;
     color: var(--white);
     margin-bottom: 24px;
-    display: block;
+}
+.banner-section .authentic-btn
+{
+    display: flex;
+    justify-content: center;
+    
 }
 .banner-section .authentic-btn button 
 {
@@ -145,6 +146,7 @@ header section .logo img
     background-color: var(--black);
     border-radius: 8px;
     border: none;
+    transition: 0.5s;
 }
 .banner-section .authentic-btn button a
 {
@@ -153,10 +155,12 @@ header section .logo img
     color: var(--white);
     font-size: 18px;
     letter-spacing: 1px;
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
 }
 .banner-section .authentic-btn button .bi-arrow-right-short
 {
     font-size: 24px;
+    margin-left: 10px;
 }
+
