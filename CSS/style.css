@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    /* background-color: white; */
-}
-
 :root {
     --okar-color: #D39121;
     --medium-grey: #8D8987;
@@ -47,7 +43,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     padding: 30px;
-    border: 2px solid green;
     align-items: center;
     z-index: 1000;
 
@@ -195,34 +190,43 @@ header section .logo img {
 }
 
 /* About section */
-
 .about-section {
-    border: 2px solid red;
+    position: relative;
+}
+
+.about-section .about-container {
     width: 100%;
     height: 100vh;
     z-index: -1000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.about-section .bg-experience-text {
+    position: absolute;
+    top: -130px;
 }
 
 .about-section .bg-experience-text h1 {
     font-size: 350px;
     color: var(--medium-grey);
-    opacity: 0.4;
+    opacity: 0.2;
     font-family: var(--bebas-neue);
     text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    transform: translateY(-120px);
 }
 
 .about-section .about-details {
-    border: 2px solid blue;
-    width: 80%;
+    width: 60%;
+    margin: auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* transform: translateY(-300px); */
 }
 
 .about-section .right-section {
     width: 40%;
-    border: 2px solid pink;
 }
 
 .about-details .right-section .abt-text .since {
@@ -245,7 +249,7 @@ header section .logo img {
 }
 
 .about-details .right-section .abt-text .abt-title h1 {
-    font-size: 64px;
+    font-size: 70px;
     color: var(--black);
     font-family: var(--bebas-neue);
     margin-bottom: 20px;
@@ -316,4 +320,16 @@ header section .logo img {
 .about-details .right-section .about-buttons .contact-btn button span:nth-child(2) {
     font-size: 24px;
     font-family: var(--bebas-neue);
+}
+
+.about-section .garlic {
+    position: absolute;
+    top: 41%;
+    left: -50px;
+}
+
+.about-section .pasta {
+    position: absolute;
+    top: 20%;
+    right: -50px;
 }
