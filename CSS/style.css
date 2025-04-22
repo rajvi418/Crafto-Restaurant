@@ -263,6 +263,11 @@ header section .logo img {
     width: 80%;
 }
 
+.about-details .right-section .about-buttons {
+    display: flex;
+    align-items: center;
+}
+
 .about-details .right-section .about-buttons .about-btn button {
     text-transform: uppercase;
     font-family: var(--bebas-neue);
@@ -272,13 +277,14 @@ header section .logo img {
     border-radius: 4px;
     cursor: pointer;
     position: relative;
-    transition: all 0.5s linear;
+    overflow: hidden;
+    margin-right: 30px;
 }
 
 .about-details .right-section .about-buttons .about-btn button h1 {
     position: relative;
-    transition: all 0.2s ease-in-out;
     letter-spacing: 0.9px;
+    transition: all 0.2s ease-in-out;
     font-size: 17px;
     color: var(--white);
     margin: 0;
@@ -295,4 +301,19 @@ header section .logo img {
 .about-details .right-section .about-buttons .about-btn button:hover h1 {
     transform: translateY(-160%);
     background: transparent;
+}
+
+.about-details .right-section .about-buttons .contact-btn button {
+    background-color: transparent;
+    border: none;
+}
+
+.about-details .right-section .about-buttons .contact-btn button span:nth-child(1) {
+    fill: var(--okar-color);
+    margin-right: 8px;
+}
+
+.about-details .right-section .about-buttons .contact-btn button span:nth-child(2) {
+    font-size: 24px;
+    font-family: var(--bebas-neue);
 }
