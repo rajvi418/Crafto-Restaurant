@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    /* background-color: white; */
 }
 
 :root {
@@ -23,6 +23,16 @@ body {
 }
 
 
+
+a {
+    text-decoration: none;
+}
+
+.mg-right-5 {
+    margin-right: 5px;
+}
+
+/* Header Section  */
 header {
     width: 100%;
     height: 100vh;
@@ -38,16 +48,6 @@ header {
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-}
-
-.mg-right-5 {
-    margin-right: 5px;
-}
-
-/* Header Section  */
-
 header .header-section {
     width: 100%;
     padding: 15px 45px;
@@ -56,6 +56,7 @@ header .header-section {
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 header section .logo img {
@@ -90,27 +91,6 @@ header section .logo img {
 /* Banner Section  */
 .banner-container {
     position: relative;
-}
-
-.banner-container .banner-chef-icon {
-    position: absolute;
-    bottom: 40px;
-    right: -60px;
-    animation: float 3s linear infinite;
-}
-
-@keyframes float {
-    0% {
-        transform: translatey(0px);
-    }
-
-    50% {
-        transform: translatey(-8px);
-    }
-
-    100% {
-        transform: translatey(0px);
-    }
 }
 
 .banner-content {
@@ -186,4 +166,44 @@ header section .logo img {
 
 .banner-text-section .authentic-btn button .bi-arrow-right-short {
     font-size: 24px;
+}
+
+.banner-container .banner-chef-icon {
+    position: absolute;
+    bottom: 40px;
+    right: -60px;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-8px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+/* About section */
+
+.about-section {
+    border: 2px solid red;
+    width: 100%;
+    height: 100vh;
+}
+
+.about-section .bg-experience-text h1 {
+    font-size: 350px;
+    color: var(--medium-grey);
+    opacity: 0.4;
+    font-family: var(--bebas-neue);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-120px);
 }
