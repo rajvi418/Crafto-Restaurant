@@ -213,3 +213,86 @@ header section .logo img {
     justify-content: center;
     transform: translateY(-120px);
 }
+
+.about-section .about-details {
+    border: 2px solid blue;
+    width: 80%;
+    display: flex;
+}
+
+.about-section .right-section {
+    width: 40%;
+    border: 2px solid pink;
+}
+
+.about-details .right-section .abt-text .since {
+    color: var(--red);
+    font-weight: 600;
+    font-family: var(--schibsted-grotesk);
+    font-size: 15px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-details .right-section .abt-text .since .line {
+    width: 70px;
+    height: 2px;
+    background: var(--red);
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.about-details .right-section .abt-text .abt-title h1 {
+    font-size: 64px;
+    color: var(--black);
+    font-family: var(--bebas-neue);
+    margin-bottom: 20px;
+    color: var(--dark-grey);
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+
+.about-details .right-section .abt-text .abt-title p {
+    font-size: 18px;
+    color: var(--medium-grey);
+    font-family: var(--schibsted-grotesk);
+    line-height: 30px;
+    margin-bottom: 25px;
+    width: 80%;
+}
+
+.about-details .right-section .about-buttons .about-btn button {
+    text-transform: uppercase;
+    font-family: var(--bebas-neue);
+    border: none;
+    background-color: var(--dark-grey);
+    padding: 17px 28px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.about-details .right-section .about-buttons .about-btn button h1 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 0.9px;
+    font-size: 17px;
+    color: var(--white);
+    margin: 0;
+}
+
+.about-details .right-section .about-buttons .about-btn button h1::before {
+    content: "About restaurant";
+    position: absolute;
+    color: var(--white);
+    background: transparent;
+    transform: translateY(160%);
+}
+
+.about-details .right-section .about-buttons .about-btn button:hover h1 {
+    transform: translateY(-160%);
+    background: transparent;
+}
