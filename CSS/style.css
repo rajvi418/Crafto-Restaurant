@@ -198,11 +198,10 @@ header section .logo img {
 
 .about-section .about-container {
     width: 100%;
-    height: 100vh;
-    z-index: -1000;
     position: relative;
     display: flex;
     justify-content: center;
+    padding: 110px 0px 110px 0px;
 }
 
 .about-section .bg-experience-text {
@@ -279,11 +278,11 @@ header section .logo img {
     font-family: var(--bebas-neue);
     border: none;
     background-color: var(--dark-grey);
-    padding: 17px 28px 14px;
+    padding: 17px 28px;
     border-radius: 4px;
     cursor: pointer;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-right: 30px;
 }
 
@@ -301,11 +300,11 @@ header section .logo img {
     position: absolute;
     color: var(--white);
     background: transparent;
-    transform: translateY(160%);
+    transform: translateY(170%);
 }
 
 .about-details .right-section .about-buttons .about-btn button:hover h1 {
-    transform: translateY(-160%);
+    transform: translateY(-170%);
     background: transparent;
 }
 
