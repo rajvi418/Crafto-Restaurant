@@ -340,3 +340,40 @@ header section .logo img {
     top: 20%;
     right: -50px;
 }
+
+/* Service Section  */
+.about-service {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.fast-delivery {
+    display: flex;
+    align-items: center;
+    border: 2px solid yellow;
+    justify-content: center;
+    width: fit-content;
+}
+
+.about-section .about-service .icons {
+    padding: 37px;
+    width: fit-content;
+    border-radius: 50%;
+    /* border: 2px solid green; */
+    box-shadow: 5px 5px 15px #dfdfdf;
+    margin-right: 25px;
+}
+
+.about-section .about-service .detail h4 {
+    font-family: var(--bebas-neue);
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.about-section .about-service .detail p {
+    font-family: var(--schibsted-grotesk);
+    font-size: 17px;
+    margin-bottom: 0px;
+    color: var(--medium-grey);
+}
