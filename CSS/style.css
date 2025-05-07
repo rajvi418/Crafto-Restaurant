@@ -22,6 +22,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .mg-right-5 {
     margin-right: 5px;
 }
@@ -408,16 +412,53 @@ header section .logo img {
     margin-bottom: 30px;
 }
 
-.items-type {
-    border: 2px solid red;
+.type-of-item {
+    /* border: 2px solid red; */
     width: 40%;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
-.items-type .starters .icons {
-    color: var(--dark-grey);
-    font-size: 34px;
+.type-of-item .item .item-type {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.type-of-item .item .item-type .icons {
+    margin: auto;
+    color: var(--dark-grey);
+    fill: var(--dark-grey);
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.type-of-item .item .item-type .name-of-type h4 {
+    font-size: 20px;
+    font-family: var(--schibsted-grotesk);
+    text-transform: capitalize;
+    color: var(--dark-grey);
+    cursor: pointer;
+}
+
+.item,
+.item .icons {
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.item:hover .icons {
+    transform: scale(1.1);
+}
+
+/* .name-of-type {
+    border: 2px solid red;
+} */
+
+.type-of-item .item .item-type .name-of-type .underline {
+    background: var(--dark-grey);
+    display: block;
+    width: 100%;
+    height: 2px;
 }
