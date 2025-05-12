@@ -472,6 +472,7 @@ header section .logo img {
     font-size: 34px;
     margin-top: 9px;
     margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
 }
 
 .type-of-item .non-vegetarian .item-type {
@@ -483,7 +484,6 @@ header section .logo img {
 .type-of-item .non-vegetarian .item-type .icons {
     margin: auto;
     font-size: 34px;
-    fill: var(--medium-grey);
 }
 
 .non-vegetarian,
@@ -492,7 +492,7 @@ header section .logo img {
     transition: all 0.5s ease-in-out;
 }
 
-.non-vegetarian:hover .icons {
+.non-vegetarian:hover .item-type .non-veg-item {
     fill: var(--dark-grey);
     transform: scale(1.1);
 }
@@ -521,5 +521,182 @@ header section .logo img {
 }
 
 .type-of-item .non-vegetarian:hover .item-type:hover .name-of-type .underline {
+    opacity: 1;
+}
+
+/* vegetarian */
+.type-of-item .vegetarian .item-type .veg-item {
+    margin: auto;
+    fill: var(--medium-grey);
+    font-size: 34px;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.type-of-item .vegetarian .item-type {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.type-of-item .vegetarian .item-type .icons {
+    margin: auto;
+    font-size: 34px;
+}
+
+.vegetarian,
+.vegetarian .icons {
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.vegetarian:hover .item-type .veg-item {
+    fill: var(--dark-grey);
+    transform: scale(1.1);
+}
+
+.type-of-item .vegetarian .item-type .name-of-type h4 {
+    font-size: 20px;
+    font-family: var(--schibsted-grotesk);
+    text-transform: capitalize;
+    color: var(--medium-grey);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.type-of-item .vegetarian .item-type:hover .name-of-type h4 {
+
+    color: var(--dark-grey);
+}
+
+.type-of-item .vegetarian .item-type .name-of-type .underline {
+    background: var(--dark-grey);
+    display: block;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.type-of-item .vegetarian:hover .item-type:hover .name-of-type .underline {
+    opacity: 1;
+}
+
+/* Desserts */
+.type-of-item .dessert .item-type .dessert-item {
+    margin: auto;
+    fill: var(--medium-grey);
+    font-size: 34px;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.type-of-item .dessert .item-type {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.type-of-item .dessert .item-type .icons {
+    margin: auto;
+    font-size: 34px;
+}
+
+.dessert,
+.dessert .icons {
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.dessert:hover .item-type .dessert-item {
+    fill: var(--dark-grey);
+    transform: scale(1.1);
+}
+
+.type-of-item .dessert .item-type .name-of-type h4 {
+    font-size: 20px;
+    font-family: var(--schibsted-grotesk);
+    text-transform: capitalize;
+    color: var(--medium-grey);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.type-of-item .dessert .item-type:hover .name-of-type h4 {
+
+    color: var(--dark-grey);
+}
+
+.type-of-item .dessert .item-type .name-of-type .underline {
+    background: var(--dark-grey);
+    display: block;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.type-of-item .dessert:hover .item-type:hover .name-of-type .underline {
+    opacity: 1;
+}
+
+/* Drinks */
+.type-of-item .drinks .item-type .drink-item {
+    margin: auto;
+    fill: var(--medium-grey);
+    font-size: 34px;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.type-of-item .drinks .item-type {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.type-of-item .drinks .item-type .icons {
+    margin: auto;
+    font-size: 34px;
+}
+
+.drinks,
+.drinks .icons {
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.drinks:hover .item-type .drink-item {
+    fill: var(--dark-grey);
+    transform: scale(1.1);
+}
+
+.type-of-item .drinks .item-type .name-of-type h4 {
+    font-size: 20px;
+    font-family: var(--schibsted-grotesk);
+    text-transform: capitalize;
+    color: var(--medium-grey);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.type-of-item .drinks .item-type:hover .name-of-type h4 {
+
+    color: var(--dark-grey);
+}
+
+.type-of-item .drinks .item-type .name-of-type .underline {
+    background: var(--dark-grey);
+    display: block;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.type-of-item .drinks:hover .item-type:hover .name-of-type .underline {
     opacity: 1;
 }
