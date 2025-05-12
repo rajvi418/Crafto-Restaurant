@@ -418,15 +418,17 @@ header section .logo img {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.type-of-item .item .item-type {
+/* starter items */
+.type-of-item .starter .item-type {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.type-of-item .item .item-type .icons {
+.type-of-item .starter .item-type .icons {
     margin: auto;
     color: var(--dark-grey);
     fill: var(--dark-grey);
@@ -434,7 +436,7 @@ header section .logo img {
     margin-bottom: 10px;
 }
 
-.type-of-item .item .item-type .name-of-type h4 {
+.type-of-item .starter .item-type .name-of-type h4 {
     font-size: 20px;
     font-family: var(--schibsted-grotesk);
     text-transform: capitalize;
@@ -442,13 +444,13 @@ header section .logo img {
     cursor: pointer;
 }
 
-.item,
-.item .icons {
+.starter,
+.starter .icons {
     transform: scale(1);
     transition: all 0.5s ease-in-out;
 }
 
-.item:hover .icons {
+.starter:hover .icons {
     transform: scale(1.1);
 }
 
@@ -456,9 +458,68 @@ header section .logo img {
     border: 2px solid red;
 } */
 
-.type-of-item .item .item-type .name-of-type .underline {
+.type-of-item .starter .item-type .name-of-type .underline {
     background: var(--dark-grey);
     display: block;
     width: 100%;
     height: 2px;
+}
+
+/* Non Veg item  */
+.type-of-item .non-vegetarian .item-type .non-veg-item {
+    margin: auto;
+    fill: var(--medium-grey);
+    font-size: 34px;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.type-of-item .non-vegetarian .item-type {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.type-of-item .non-vegetarian .item-type .icons {
+    margin: auto;
+    font-size: 34px;
+    fill: var(--medium-grey);
+}
+
+.non-vegetarian,
+.non-vegetarian .icons {
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.non-vegetarian:hover .icons {
+    fill: var(--dark-grey);
+    transform: scale(1.1);
+}
+
+.type-of-item .non-vegetarian .item-type .name-of-type h4 {
+    font-size: 20px;
+    font-family: var(--schibsted-grotesk);
+    text-transform: capitalize;
+    color: var(--medium-grey);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.type-of-item .non-vegetarian .item-type:hover .name-of-type h4 {
+
+    color: var(--dark-grey);
+}
+
+.type-of-item .non-vegetarian .item-type .name-of-type .underline {
+    background: var(--dark-grey);
+    display: block;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.type-of-item .non-vegetarian:hover .item-type:hover .name-of-type .underline {
+    opacity: 1;
 }
