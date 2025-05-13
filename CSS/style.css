@@ -397,7 +397,7 @@ header section .logo img {
 .popular-menu .chooseDelicious .chooseDelicious-text h2 {
     color: var(--red);
     font-family: var(--schibsted-grotesk);
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 10px;
@@ -814,4 +814,117 @@ header section .logo img {
 .little-desrciption p span {
     text-decoration: underline;
     font-weight: 600;
+}
+
+/* Popular Dishes */
+.popular-dishes {
+    padding: 110px 0px 110px 0px;
+}
+
+.popular-dishes .specials-choice .specials-choice-text h2 {
+    color: var(--red);
+    font-family: var(--schibsted-grotesk);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.popular-menu-text h1 {
+    text-align: center;
+    font-size: 55px;
+    font-family: var(--bebas-neue);
+    color: var(--dark-grey);
+    margin-bottom: 30px;
+}
+
+/* Slider */
+.popular-dish-slider {
+    width: 100%;
+    height: 390px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border: 2px solid red;
+    font-family: var(--schibsted-grotesk);
+}
+
+.slider-track {
+    width: calc(390px * 10);
+    display: flex;
+    flex-direction: row;
+}
+
+.slider-track .slider {
+    border: 2px solid green;
+    height: 380px;
+    width: 10%;
+    perspective: 100px;
+}
+
+.slider-track .slider img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: all 1s;
+}
+
+.slider-track .slider:hover img {
+    transform: scale(1.1);
+}
+
+.slider-track .slider .content {
+    border: 2px solid pink;
+    margin: auto;
+    width: 100%;
+    color: var(--medium-grey);
+}
+
+.item-name h2 {
+    font-size: 20px;
+    text-align: center;
+    color: var(--dark-grey);
+    font-weight: 600;
+}
+
+.slider-track .slider .content .vegetables-inclulded {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.slider-track .slider .content .vegetables-inclulded p {
+    margin: 0px;
+}
+
+.slider-track .slider .content .vegetables-inclulded .bi-circle-fill {
+    font-size: 8px;
+    color: rgb(188, 187, 187);
+}
+
+/* Shadow  */
+.popular-dish-slider::before,
+.popular-dish-slider::after {
+    content: "";
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    z-index: 2;
+}
+
+.popular-dish-slider::before {
+    top: 0;
+    left: 0;
+}
+
+.popular-dish-slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
 }
