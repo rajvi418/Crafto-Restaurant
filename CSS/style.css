@@ -69,6 +69,7 @@ header section .logo img {
     display: flex;
     align-items: center;
     gap: 40px;
+    letter-spacing: 1px;
     color: var(--white);
     font-family: var(--bebas-neue);
     font-size: 20px;
@@ -419,6 +420,7 @@ header section .logo img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 /* starter items */
@@ -699,4 +701,43 @@ header section .logo img {
 
 .type-of-item .drinks:hover .item-type:hover .name-of-type .underline {
     opacity: 1;
+}
+
+/* items-menu */
+.items-menu {
+    width: 80%;
+    margin: auto;
+    border: 2px solid green;
+}
+
+.items-menu .starter-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-menu .left-menu,
+.items-menu .right-menu {
+    width: 50%;
+    padding: 0px 15px 0px 15px;
+}
+
+.items-menu .item-name {
+    display: flex;
+    width: 100%;
+    border: 2px solid red;
+}
+
+.items-menu .item-name .name-price {
+    display: flex;
+    justify-content: space-between;
+    width: 110%;
+    border: 2px solid pink;
+}
+
+.items-menu .item-name .name-price h3 {
+    font-size: 18px;
+}
+
+.items-menu .item-name .name-price .dashs h4 {
+    font-size: 20px;
 }
