@@ -706,13 +706,14 @@ header section .logo img {
 .items-menu {
     width: 80%;
     margin: auto;
+    margin-bottom: 72px;
 }
 
 .items-menu .starter-menu,
-.items-menu .non-veg-menu,
-.items-menu .vegetarian-menu,
-.items-menu .dessert-menu,
-.items-menu .drinks-menu {
+.items-menu .non-vegetarian,
+.items-menu .vegetarian,
+.items-menu .dessert,
+.items-menu .drinks {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -766,7 +767,7 @@ header section .logo img {
 }
 
 /* javascript and css */
-.starter-menu > :active {
+/* .starter-menu > :active {
     display: block;
 }
 
@@ -776,4 +777,41 @@ header section .logo img {
 
 .fade {
     transition: opacity .15s linear;
+} */
+
+/* Mini Description on poular Menu  */
+.little-desrciption {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.little-desrciption .masterchef {
+    background-color: var(--red);
+    align-self: center;
+    color: var(--white);
+    padding: 8px 25px;
+    border-radius: 50px;
+}
+
+.little-desrciption .masterchef h5 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.little-desrciption div {
+    align-self: center;
+}
+
+.little-desrciption p {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    font-family: var(--schibsted-grotesk);
+}
+
+.little-desrciption p span {
+    text-decoration: underline;
+    font-weight: 600;
 }
