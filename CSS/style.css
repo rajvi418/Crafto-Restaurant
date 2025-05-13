@@ -198,7 +198,6 @@ header section .logo img {
 .about-section {
     position: relative;
     overflow: hidden;
-    border: 2px solid green;
 }
 
 
@@ -289,7 +288,7 @@ header section .logo img {
     border-radius: 4px;
     cursor: pointer;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     margin-right: 30px;
 }
 
@@ -709,8 +708,11 @@ header section .logo img {
     margin: auto;
 }
 
-.items-menu .starter-menu {
-    border: 2px solid green;
+.items-menu .starter-menu,
+.items-menu .non-veg-menu,
+.items-menu .vegetarian-menu,
+.items-menu .dessert-menu,
+.items-menu .drinks-menu {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -719,21 +721,19 @@ header section .logo img {
 .items-menu .left-menu,
 .items-menu .right-menu {
     width: 45%;
-    /* padding: 0px 15px 0px 15px; */
-}
-
-.items-menu .right-menu {
-    border: 2px solid blue;
-}
-
-.items-menu .left-menu {
-    border: 2px solid grey;
+    padding: 0px 15px 0px 15px;
 }
 
 .items-menu .item-name {
     width: 100%;
     display: flex;
-    border: 2px solid greenyellow;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+}
+
+.items-menu .item-name .item-img img {
+    margin-right: 30px;
+    border-radius: 50px;
 }
 
 .items-menu .item-name .item-detail {
@@ -743,7 +743,10 @@ header section .logo img {
 .items-menu .item-name .name-price {
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
+    align-items: center;
+    margin-bottom: 5px;
+    font-family: var(--schibsted-grotesk);
+
 }
 
 .items-menu .item-name .name-price h3 {
@@ -751,5 +754,26 @@ header section .logo img {
 }
 
 .items-menu .item-name .name-price .dashs h4 {
-    font-size: 20px;
+    font-size: 12px;
+    color: var(--medium-grey);
+}
+
+.items-menu .item-name .item-description p {
+    font-size: 17px;
+    margin: 0;
+    color: var(--medium-grey);
+    font-family: var(--schibsted-grotesk);
+}
+
+/* javascript and css */
+.starter-menu > :active {
+    display: block;
+}
+
+.starter-menu > .tab-pane {
+    display: none;
+}
+
+.fade {
+    transition: opacity .15s linear;
 }
