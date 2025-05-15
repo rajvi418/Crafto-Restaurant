@@ -842,12 +842,12 @@ header section .logo img {
 /* Slider */
 .popular-dish-slider {
     width: 100%;
-    height: 390px;
+    height: 100%;
     position: relative;
     display: grid;
     place-items: center;
     overflow: hidden;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     font-family: var(--schibsted-grotesk);
 }
 
@@ -855,31 +855,61 @@ header section .logo img {
     width: calc(390px * 10);
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+    /* animation: scroll 20s linear infinite; */
+    /* animation-play-state: paused; */
 }
+
+/* Slider Animation */
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+
 
 .slider-track .slider {
-    border: 2px solid green;
-    height: 380px;
     width: 10%;
     perspective: 100px;
+    transition-delay: 2s;
+
 }
 
-.slider-track .slider img {
-    width: 100%;
-    height: 100%;
+
+.slider-track .slider .img {
+    width: 390px;
+    height: 277px;
+    margin: auto;
+    padding: 0px 15px;
     border-radius: 8px;
     margin-bottom: 30px;
     transition: all 1s;
+    overflow: hidden;
+}
+
+.slider-track .slider .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: all 0.5s;
 }
 
 .slider-track .slider:hover img {
     transform: scale(1.1);
+    filter: brightness(0.5);
+
 }
 
 .slider-track .slider .content {
-    border: 2px solid pink;
     margin: auto;
+    margin-bottom: 15px;
     width: 100%;
+    padding: 0px 15px 0px 15px;
     color: var(--medium-grey);
 }
 
