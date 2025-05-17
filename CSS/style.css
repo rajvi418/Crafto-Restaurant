@@ -846,8 +846,9 @@ header section .logo img {
     position: relative;
     display: grid;
     place-items: center;
-    overflow: hidden;
+    margin-bottom: 60px;
     /* border: 2px solid red; */
+    overflow: hidden;
     font-family: var(--schibsted-grotesk);
 }
 
@@ -983,4 +984,55 @@ header section .logo img {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
+}
+
+/* Text Slider */
+.text-slider-track {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text-slide {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    /* overflow: hidden; */
+    animation: scroll 10s linear infinite;
+}
+
+/* Slider Animation */
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+.text-slide .solid-text,
+.text-slide .bordered-text {
+    width: 100%;
+    perspective: 100px;
+    font-family: var(--bebas-neue);
+    transition-delay: 2s;
+}
+
+.text-slide .solid-text h1 {
+    margin: 0;
+    font-size: 140px;
+    border: none;
+    color: var(--dark-grey);
+}
+
+.text-slide .bordered-text h1 {
+    margin: 0;
+    font-size: 140px;
+    -webkit-text-stroke: 1px var(--okar-color);
+    color: transparent;
 }
