@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+/* body {
+    background: #000;
+} */
+
 :root {
     --okar-color: #D39121;
     --medium-grey: #8D8987;
@@ -709,18 +713,19 @@ header section .logo img {
     margin-bottom: 72px;
 }
 
-.items-menu .starter-menu,
-.items-menu .non-vegetarian,
-.items-menu .vegetarian,
-.items-menu .dessert,
-.items-menu .drinks {
+.items-menu .starter-menu a,
+.items-menu .non-vegetarian a,
+.items-menu .vegetarian a,
+.items-menu .dessert a,
+.items-menu .drinks a {
     display: flex;
     width: 100%;
     justify-content: center;
+    color: var(--dark-grey);
 }
 
-.items-menu .left-menu,
-.items-menu .right-menu {
+.items-menu a .left-menu,
+.items-menu a .right-menu {
     width: 45%;
     padding: 0px 15px 0px 15px;
 }
@@ -1076,4 +1081,16 @@ header section .logo img {
     font-size: 20px;
     color: var(--okar-color);
     margin-bottom: 30px;
+}
+
+
+#scrollBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #230447;
+    width: 0%;
+    z-index: 9999;
+    transition: width 0.25s ease;
 }
