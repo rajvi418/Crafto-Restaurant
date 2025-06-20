@@ -833,10 +833,6 @@ header section .logo img {
 }
 
 /* Slider */
-.sliders {
-    border: 2px solid red;
-    overflow: hidden;
-}
 
 .popular-dish-slider {
     width: 100%;
@@ -984,8 +980,40 @@ header section .logo img {
     transform: rotateZ(180deg);
 }
 
+/* Reviews Section */
+
 /* Text Slider */
+.reviews-section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-bottom: 60px;
+    font-family: var(--schibsted-grotesk);
+    padding: 110px 0px 110px 0px;
+    background-color: #F9F6F3;
+}
+
+.review-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.review-container .review-left-img {
+    align-content: end;
+    margin-bottom: 30px;
+}
+
+.review-container .review-right-img {
+    align-content: start;
+    margin-top: 30px;
+}
+
 .text-slider {
+    width: 100%;
+    overflow: hidden;
     position: absolute;
     top: -80px;
 }
@@ -1003,8 +1031,7 @@ header section .logo img {
     display: flex;
     gap: 30px;
     flex-direction: row;
-    /* overflow: hidden; */
-    animation: scroll 30s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 
 /* Slider Animation */
@@ -1041,10 +1068,8 @@ header section .logo img {
 }
 
 /* Reviews Section  */
-.reviews-section {
-    padding: 110px 0px 110px 0px;
-    background-color: #F9F6F3;
-    position: relative;
+.review-detail-container {
+    width: 40%;
 }
 
 .reviews-images .double-quotes {
@@ -1060,7 +1085,7 @@ header section .logo img {
 }
 
 .reviews-details {
-    width: 70%;
+    width: 100%;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -1083,6 +1108,51 @@ header section .logo img {
     margin-bottom: 30px;
 }
 
+/* Customer Review  */
+.customer-reviews {
+    background-color: transparent;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.customer-reviews button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#customer-1,
+#customer-2,
+#customer-3 {
+    display: none;
+}
+
+#customer-1 {
+    width: 100%;
+    display: block;
+}
+
+.c-details h4 {
+    font-size: 38px;
+    font-family: var(--bebas-neue);
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+}
+
+.c-details {
+    text-align: center;
+    width: 100%;
+}
+
+#c-1,
+#c-2,
+#c-3 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
 
 #scrollBar {
     position: fixed;
