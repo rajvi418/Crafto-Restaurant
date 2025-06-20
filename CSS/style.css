@@ -1164,3 +1164,35 @@ header section .logo img {
     z-index: 9999;
     transition: width 0.25s ease;
 }
+
+
+.others-reviews {
+    background-color: var(--white);
+    padding: 20px 70px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.others-reviews .rating-stars {
+    background-color: var(--okar-color);
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.others-reviews .rating-stars .bi-star-fill {
+    color: var(--white);
+    font-size: 16px;
+}
+
+.others-reviews .review-text span:first-child {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.others-reviews .review-text span:last-child {
+    font-size: 18px;
+}
